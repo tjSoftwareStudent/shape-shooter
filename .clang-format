@@ -1,0 +1,10 @@
+BasedOnStyle: Google
+ColumnLimit: 80
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: false
+BinPackParameters: false
+BinPackArguments: false
+PenaltyReturnTypeOnItsOwnLine: 0
+IndentWidth: 4
+TabWidth: 4
+

@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug with LLDB",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",  // Output binary
+            "args": [],  // Program arguments
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "terminal": "integrated",  // Integrated terminal in VS Code
+            "preLaunchTask": "cppbuild"  // Your build task
+        }
+    ]
+}
