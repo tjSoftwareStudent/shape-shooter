@@ -14,18 +14,19 @@ Lines will be given in that order, with the following syntax:
     - RGB Color (R, G, B)   int, int, int
 
 # Player Specification 
-- Player SR CR S FR FG FB OR OG OB OT V
-    - Shape Radius      SR          int
-    - Collision Radius  CR          int
-    - Speed             S           float
-    - Fill Color        FR, FG, FB  int, int, int
-    - Outline Color     OR, OG, OB  int, int, int
-    - Outline Thickness OT          int
-    - Shape Vertices    V           int
+- Player SR CR S FR FG FB OR OG OB OT V SMB
+    - Shape Radius          SR          int
+    - Collision Radius      CR          int
+    - Speed                 S           float
+    - Fill Color            FR, FG, FB  int, int, int
+    - Outline Color         OR, OG, OB  int, int, int
+    - Outline Thickness     OT          int
+    - Shape Vertices        V           int
+    - Special Move Bullets  SMB         int
 
 # Enemy Specification
 
-- Enemy: SR CR SMIN SMAX OR OG OB OT VMIN VMAX L SI
+- Enemy: SR CR SMIN SMAX OR OG OB OT VMIN VMAX L SI SEL
     - Shape Radius          SR          int
     - Collision Radius      CR          int
     - Min/Max Speed         SMIN, SMAX  float, float
@@ -33,7 +34,8 @@ Lines will be given in that order, with the following syntax:
     - Outline Thickness     OT          int
     - Min/Max Vertices      VMIN, VMAX  int, int
     - Small Lifespan        L           int
-    - Spawn Interval        SP          int
+    - Spawn Interval        SI          int
+    - Small Enemy Lifespan  SEL         int
 
 # Bullet Specification 
 

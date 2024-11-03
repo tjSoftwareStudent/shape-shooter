@@ -4,15 +4,13 @@
 
 struct PlayerConfig
 {
-    int SR, CR, FR, FG, FB, OR, OG, OB, OT,
-        V;  // Shape radius, collision radius , fill color rgb, outline color
-            // rgb, outline thickness
+    int SR, CR, FR, FG, FB, OR, OG, OB, OT, V, SMB;
     float S;
 };
 
 struct EnemyConfig
 {
-    int SR, CR, OR, OG, OB, OT, VMIN, VMAX, L, SI, SMIN, SMAX;
+    int SR, CR, OR, OG, OB, OT, VMIN, VMAX, L, SI, SMIN, SMAX, SEL;
 };
 
 struct BulletConfig
@@ -35,6 +33,8 @@ class Game
     int _score = 0;
     int _currentFrame = 0;
     int _lastEnemySpawnTime = 0;
+    int _lastSpecialMoveTime = 0;
+    int _specialMoveCooldownTime = 200;
     bool _paused = false;
     bool _running = true;
 
